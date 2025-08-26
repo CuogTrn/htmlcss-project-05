@@ -27,6 +27,38 @@ a {
     margin: 0 auto;
 }
 
+.section-subtitle {
+    display: inline-flex;
+    align-items: center;
+    color: var(--thirdly-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.section-subtitle::before {
+    position: relative;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: var(--thirdly-color);
+    margin-right: 12px;
+}
+
+.section-heading {
+    color: var(--secondary-color);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+.section-desc {
+    color: var(--thirdly-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
 /* Header */
 .header__body {
     display: flex;
@@ -109,4 +141,364 @@ a {
 
 .header__button-signup:hover {
     opacity: 0.9;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__content-heading {
+    margin-top: 12px;
+    width: 500px;
+}
+
+.hero__content-desc {
+    margin-top: 20px;
+    width: 540px;
+}
+
+.hero__content--strong {
+    color: var(--primary-color);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+.hero__content-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
+    margin-top: 40px;
+}
+
+.hero__content-input {
+    margin: 23px;
+    border: none;
+    outline: none;
+}
+
+.hero__content-input::placeholder {
+    color: var(--thirdly-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.hero__content-form-btn {
+    margin: 8px;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.75;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #7264d6;
+    cursor: pointer;
+}
+
+.hero__content-form-btn:hover {
+    opacity: 0.9;
+}
+
+.hero__content-alert {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.79;
+    margin-top: 20px;
+}
+
+.hero__media {
+    position: relative;
+}
+
+.hero__phone {
+    position: relative;
+    width: 296px;
+    height: 562px;
+    border-radius: 40px;
+    border: 12px solid #212832;
+    background: #fff;
+    user-select: none;
+}
+
+.hero__phone-top {
+    position: relative;
+}
+
+.hero__phone-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -33%);
+    width: 144px;
+    height: 36px;
+    border-radius: 0 0 18px 18px;
+    background: #3c2f60;
+}
+
+.card {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(76deg, #8679e4 11.52%, #7264d6 70.78%);
+    overflow: hidden;
+}
+
+.card__inner {
+    padding: 16px;
+}
+
+.card__title {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__amount {
+    margin-top: 2px;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 5px;
+    margin-top: 32px;
+}
+
+.card__info-valid--heading,
+.card__info-card-holder--heading {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__info-valid--date,
+.card__info-card-holder--name {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card__brand-logo {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.card__decor-top {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    z-index: -1;
+}
+
+.card__decor-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.hero__phone-bottom {
+    margin-top: 210px;
+    padding: 0 12px;
+}
+
+.hero__phone-head--wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__phone-bottom--title {
+    color: #31456a;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero__phone-body-wrap {
+    margin-top: 28px;
+}
+
+.hero__phone-body-card {
+    display: inline-flex;
+    align-items: center;
+}
+
+.hero__phone-body-card + .hero__phone-body-card {
+    margin-top: 28px;
+}
+
+.hero__phone-body-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(74, 181, 227, 0.1);
+}
+
+.hero__phone-body-card:nth-of-type(2) .hero__phone-body-icon-wrap {
+    background: rgba(218, 100, 100, 0.1);
+}
+
+.hero__phone-body-card:nth-of-type(3) .hero__phone-body-icon-wrap {
+    background: rgba(67, 159, 144, 0.1);
+}
+
+.hero__phone-body-card:nth-of-type(4) .hero__phone-body-icon-wrap {
+    background: rgba(114, 100, 214, 0.1);
+}
+
+.hero__phone-body-card:nth-of-type(even) .hero__phone-body-card--title {
+    gap: 6px 73px;
+}
+
+.hero__phone-body-card--icon {
+    width: 20px;
+    height: 20px;
+}
+
+.hero__phone-body-card--title {
+    margin-left: 14px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 6px 29px;
+}
+
+.card--features,
+.card--money {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card--info,
+.card--date {
+    color: #696d76;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card--money,
+.card--date {
+    text-align: right;
+}
+
+.hero__phone-deposite--decor {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+    padding: 14px 10px;
+}
+
+.title--decor {
+    margin-right: auto;
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.amount--decor {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero__phone-interest--decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 127px;
+    right: -44px;
+    transform: translateX(100%);
+    width: 130px;
+    height: 130px;
+    background: #da6464;
+    border-radius: 50%;
+}
+
+.percent-interest--decor {
+    color: #fff;
+    text-align: center;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.title-interest--decor {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero__phone-funds--decor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 61px;
+    right: -74px;
+    width: 124px;
+    height: 68px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.funds--icon {
+    width: 20px;
+    margin-right: 11px;
+}
+
+.title-funds--decor {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.amount-funds--decor {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
 }
