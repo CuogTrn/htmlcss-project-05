@@ -16,3 +16,97 @@ body {
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
 }
+
+/* Common */
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+
+.header__nav {
+    margin-right: auto;
+    margin-left: 70px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-item {
+    padding: 5px 24px;
+    color: var(--thirdly-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    transition: 0.2s;
+}
+
+.header__nav-item:hover {
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.header__nav-item--active {
+    position: relative;
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.header__nav-item--active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    width: 47px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #7264d6;
+}
+
+.header__button-login {
+    color: var(--thirdly-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-right: 28px;
+    transition: 0.2s;
+}
+
+.header__button-login:hover {
+    color: var(--secondary-color);
+}
+
+.header__button-signup {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.75;
+    padding: 12px 28px;
+    background: var(--secondary-color);
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.header__button-signup:hover {
+    opacity: 0.9;
+}
